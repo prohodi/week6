@@ -23,9 +23,44 @@ header{
     grid-area: header;
 }
 main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40% 20% 20%;
     background-color: #fff8e4;
     grid-area: main;
+    grid-template-areas:
+    "main_section main_section"
+    "box1 box2"
+    "box3 box3";
+    row-gap: 30px ;
+    column-gap: 20px;
 }
+
+.main_section{
+    grid-area: main_section;
+}
+.box1{
+    background-color: #feebba;
+    grid-area: box1;
+}
+.box2{
+    background-color: #feebba;
+    grid-area: box2;
+}
+.box3{
+    background-color: #feebba;
+    grid-area: box3;
+}
+
+.main_section, .box1, .box2, .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 aside{
     text-align: center;
     padding-top: 30px;
