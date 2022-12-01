@@ -1,0 +1,19 @@
+*{
+    font-family: 'Oswald';
+}
+h2{
+    position: absolute;
+    padding-top: 100px;
+    margin-left: 20vh;
+}
+
+.images{
+    display: grid;
+    padding-top: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    margin-left: 20vh;
+}

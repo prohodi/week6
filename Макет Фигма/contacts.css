@@ -1,0 +1,52 @@
+*{
+    font-family:'Roboto';
+}
+.container{
+    background-color: black;
+    height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 80% 20%;
+        grid-template-areas: 
+        "logo menu mail map"
+        "all footer";
+        padding: 10px;
+    }
+
+p {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items: center;
+    justify-content:space-between;
+    width: 600px;
+    list-style: none;
+    font: bold;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    }
+    .logo{
+        display: grid;
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .map{
+        display: grid;
+        padding-top: 50px;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    footer{
+        display: grid;
+        background-color: #000000;
+        grid-area: footer;
+        align-items: center;
+        justify-items: center;
+        padding-left: 200px;
+    }
+    hr {
+        border: none; /* Убираем границу */
+        background-color: rgb(136, 140, 93); /* Цвет линии */
+        color: rgb(255, 242, 0); /* Цвет линии для IE6-7 */
+        height: 0,5px; /* Толщина линии */
+       }
